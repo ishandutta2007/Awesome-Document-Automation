@@ -1,129 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
   <defs>
-    <!-- Background Gradients -->
+    <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f172a" />
       <stop offset="50%" stop-color="#1e1b4b" />
       <stop offset="100%" stop-color="#090d16" />
     </linearGradient>
 
+    <!-- Title Gradient -->
     <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="50%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
 
+    <!-- Card Background Gradient -->
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
     </linearGradient>
 
-    <linearGradient id="glowLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Glow Line Gradient -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.7" />
       <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
     </linearGradient>
-
-    <!-- Filters -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5" />
-    </filter>
   </defs>
 
-  <style>
-    .bg-grid {
-      stroke: #334155;
-      stroke-width: 1;
-      opacity: 0.15;
-    }
-    
-    .pulse-circle {
-      animation: pulse 4s ease-in-out infinite alternate;
-    }
-    
-    .float-item-1 {
-      animation: float1 6s ease-in-out infinite alternate;
-    }
-    
-    .float-item-2 {
-      animation: float2 7s ease-in-out infinite alternate;
-    }
-    
-    .float-item-3 {
-      animation: float3 5s ease-in-out infinite alternate;
-    }
-    
-    .dash-line {
-      stroke-dasharray: 8 8;
-      animation: dashMove 20s linear infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(0.95); opacity: 0.3; }
-      100% { transform: scale(1.05); opacity: 0.7; }
-    }
-
-    @keyframes float1 {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(-12px); }
-    }
-
-    @keyframes float2 {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(14px); }
-    }
-
-    @keyframes float3 {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(-8px); }
-    }
-
-    @keyframes dashMove {
-      0% { stroke-dashoffset: 0; }
-      100% { stroke-dashoffset: 320; }
-    }
-
-    .pill-text {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      fill: #e2e8f0;
-    }
-
-    .main-title {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 46px;
-      font-weight: 900;
-      letter-spacing: -0.5px;
-    }
-
-    .sub-title {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      fill: #94a3b8;
-    }
-
-    .badge-text {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      fill: #38bdf8;
-      text-transform: uppercase;
-    }
-  </style>
-
-  <!-- Background -->
+  <!-- Background Base -->
   <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
 
   <!-- Grid Pattern -->
-  <g class="bg-grid">
+  <g stroke="#334155" stroke-width="1" opacity="0.18">
     <line x1="0" y1="60" x2="1200" y2="60" />
     <line x1="0" y1="120" x2="1200" y2="120" />
     <line x1="0" y1="180" x2="1200" y2="180" />
@@ -138,63 +47,69 @@
     <line x1="1050" y1="0" x2="1050" y2="360" />
   </g>
 
-  <!-- Glowing Orbs (Dynamic Background) -->
-  <circle cx="150" cy="80" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)" class="pulse-circle" />
-  <circle cx="1050" cy="280" r="160" fill="#c084fc" opacity="0.15" filter="url(#glow)" class="pulse-circle" />
-  <circle cx="600" cy="180" r="180" fill="#6366f1" opacity="0.08" filter="url(#glow)" />
+  <!-- Dynamic Animated Glowing Orbs (SMIL animation for guaranteed GitHub & browser rendering) -->
+  <circle cx="160" cy="90" r="130" fill="#38bdf8" opacity="0.14">
+    <animate attributeName="opacity" values="0.08;0.22;0.08" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="120;140;120" dur="5s" repeatCount="indefinite" />
+  </circle>
 
-  <!-- Flowing Dynamic Animated Lines (Background Layer) -->
-  <path d="M -50 280 C 300 360, 500 120, 1250 200" fill="none" stroke="url(#glowLineGrad)" stroke-width="3" class="dash-line" opacity="0.6" />
-  <path d="M -50 100 C 400 20, 800 320, 1250 140" fill="none" stroke="url(#glowLineGrad)" stroke-width="2" class="dash-line" opacity="0.4" />
+  <circle cx="1040" cy="270" r="150" fill="#c084fc" opacity="0.16">
+    <animate attributeName="opacity" values="0.10;0.25;0.10" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="r" values="140;165;140" dur="6s" repeatCount="indefinite" />
+  </circle>
 
-  <!-- Background Decorative Tech Floating Cards (Behind Text) -->
-  <g class="float-item-1" opacity="0.45" filter="url(#softShadow)">
-    <rect x="90" y="45" width="160" height="42" rx="21" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5" />
-    <text x="170" y="71" text-anchor="middle" class="pill-text">📄 PDF Generation</text>
+  <circle cx="600" cy="180" r="170" fill="#6366f1" opacity="0.10">
+    <animate attributeName="opacity" values="0.06;0.16;0.06" dur="7s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Flowing Dynamic Waves -->
+  <path d="M -50 270 Q 300 350, 600 240 T 1250 180" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" opacity="0.6">
+    <animate attributeName="d" values="M -50 270 Q 300 350, 600 240 T 1250 180; M -50 250 Q 300 320, 600 260 T 1250 200; M -50 270 Q 300 350, 600 240 T 1250 180" dur="8s" repeatCount="indefinite" />
+  </path>
+  <path d="M -50 100 Q 400 30, 800 290 T 1250 130" fill="none" stroke="url(#lineGrad)" stroke-width="2" opacity="0.4" />
+
+  <!-- Background Decorative Tech Floating Cards -->
+  <g transform="translate(0, 0)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="5s" repeatCount="indefinite" />
+    <rect x="80" y="48" width="165" height="40" rx="20" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="162" y="73" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">📄 PDF Generation</text>
   </g>
 
-  <g class="float-item-2" opacity="0.45" filter="url(#softShadow)">
-    <rect x="940" y="50" width="170" height="42" rx="21" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.5" />
-    <text x="1025" y="76" text-anchor="middle" class="pill-text">⚡ Template Engines</text>
+  <g transform="translate(0, 0)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,9; 0,0" dur="6s" repeatCount="indefinite" />
+    <rect x="945" y="52" width="175" height="40" rx="20" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.5" />
+    <text x="1032" y="77" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">⚡ Template Engines</text>
   </g>
 
-  <g class="float-item-3" opacity="0.45" filter="url(#softShadow)">
-    <rect x="960" y="270" width="165" height="42" rx="21" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.5" />
-    <text x="1042" y="296" text-anchor="middle" class="pill-text">🤖 AI Doc Agents</text>
+  <g transform="translate(0, 0)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="5.5s" repeatCount="indefinite" />
+    <rect x="960" y="268" width="160" height="40" rx="20" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.5" />
+    <text x="1040" y="293" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">🤖 AI Doc Agents</text>
   </g>
 
-  <g class="float-item-1" opacity="0.45" filter="url(#softShadow)">
-    <rect x="80" y="275" width="180" height="42" rx="21" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.5" />
-    <text x="170" y="301" text-anchor="middle" class="pill-text">🌐 Workflow Automation</text>
+  <g transform="translate(0, 0)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,7; 0,0" dur="6.5s" repeatCount="indefinite" />
+    <rect x="75" y="272" width="185" height="40" rx="20" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.5" />
+    <text x="167" y="297" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">🌐 Workflow Automation</text>
   </g>
 
-  <!-- FOREGROUND CONTENT (Guaranteed high visibility and never obscured) -->
-  <!-- Category Tag Badge -->
-  <g filter="url(#softShadow)">
-    <rect x="475" y="55" width="250" height="28" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
-    <text x="600" y="73" text-anchor="middle" class="badge-text">✨ CURATED ECOSYSTEM 2026 ✨</text>
-  </g>
+  <!-- FOREGROUND CONTENT (Guaranteed high contrast & visibility) -->
+  <!-- Tag Badge -->
+  <rect x="475" y="55" width="250" height="28" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="600" y="74" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#38bdf8">✨ CURATED ECOSYSTEM 2026 ✨</text>
 
   <!-- Main Title -->
-  <text x="600" y="155" text-anchor="middle" class="main-title" fill="url(#titleGrad)" filter="url(#softShadow)">
-    Awesome Document Automation
-  </text>
+  <text x="600" y="152" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5" fill="url(#titleGrad)">Awesome Document Automation</text>
 
-  <!-- Divider Glow Bar -->
-  <rect x="420" y="180" width="360" height="3" rx="1.5" fill="url(#titleGrad)" filter="url(#glow)" />
+  <!-- Divider Line -->
+  <rect x="420" y="176" width="360" height="3" rx="1.5" fill="url(#titleGrad)" />
 
   <!-- Subtitle -->
-  <text x="600" y="225" text-anchor="middle" class="sub-title" filter="url(#softShadow)">
-    Top SaaS Platforms, Open-Source Template Engines &amp; AI Document Workflows
-  </text>
+  <text x="600" y="222" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#94a3b8">Top SaaS Platforms, Open-Source Template Engines &amp; AI Document Workflows</text>
 
-  <!-- Subtitle 2 / Bullet Badges -->
-  <g filter="url(#softShadow)">
-    <text x="600" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#cbd5e1" font-weight="500">
-      🚀 Enterprise Templating &nbsp;|&nbsp; 📄 Native PDF/DOCX Engines &nbsp;|&nbsp; ⚡ Developer APIs
-    </text>
-  </g>
+  <!-- Subtitle Bullet Points -->
+  <text x="600" y="266" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#cbd5e1">🚀 Enterprise Templating &nbsp;|&nbsp; 📄 Native PDF/DOCX Engines &nbsp;|&nbsp; ⚡ Developer APIs</text>
 
-  <!-- Subtle Bottom Border Glow -->
+  <!-- Bottom Accent Border -->
   <rect x="0" y="356" width="1200" height="4" fill="url(#titleGrad)" />
 </svg>
