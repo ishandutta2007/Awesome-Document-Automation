@@ -53,48 +53,48 @@ The table below summarizes top enterprise document generation platforms, ordered
 
 The open-source document automation ecosystem provides powerful template engines, headless PDF converters, and guided legal interview systems for self-hosting.
 
-Projects below are sorted by GitHub star count (descending):
+Projects below are sorted by GitHub Stars_Count (descending):
 
-1. **[Typst](https://github.com/typst/typst)** [![GitHub stars](https://img.shields.io/github/stars/typst/typst?style=social)](https://github.com/typst/typst/stargazers)  
+1. **[Typst](https://github.com/typst/typst)** [![GitHub_Stars](https://img.shields.io/github/stars/typst/typst?style=social)](https://github.com/typst/typst/stargazers)  
    *A modern, markup-based typesetting system that is as powerful as LaTeX while being simple to learn and lightning fast to compile.* Features instant preview, clean syntax, programmable layout functions, and high-fidelity PDF rendering. Ideal for dynamic document generation, scientific publishing, and automated report compilation. **(License: Apache-2.0)**
 
-2. **[OfficeCLI](https://github.com/iOfficeAI/OfficeCLI)** [![GitHub stars](https://img.shields.io/github/stars/iOfficeAI/OfficeCLI?style=social)](https://github.com/iOfficeAI/OfficeCLI/stargazers)  
+2. **[OfficeCLI](https://github.com/iOfficeAI/OfficeCLI)** [![GitHub_Stars](https://img.shields.io/github/stars/iOfficeAI/OfficeCLI?style=social)](https://github.com/iOfficeAI/OfficeCLI/stargazers)  
    *First open-source Office suite built specifically for AI agents to read, edit, and automate Word, Excel, and PowerPoint files.* Offers headless single-binary execution with no Microsoft Office dependencies. Includes built-in high-fidelity HTML rendering so AI agents can visually inspect generated layouts and fix overflows automatically. **(License: MIT)**
 
-3. **[Gotenberg](https://github.com/gotenberg/gotenberg)** [![GitHub stars](https://img.shields.io/github/stars/gotenberg/gotenberg?style=social)](https://github.com/gotenberg/gotenberg/stargazers)  
+3. **[Gotenberg](https://github.com/gotenberg/gotenberg)** [![GitHub_Stars](https://img.shields.io/github/stars/gotenberg/gotenberg?style=social)](https://github.com/gotenberg/gotenberg/stargazers)  
    *A developer-friendly Docker-powered stateless API for converting HTML, Markdown, Word, Excel, and Office documents into native PDFs.* Integrates Chromium for web page conversion and LibreOffice for document rendering. Highly scalable for microservice architectures. **(License: MIT)**
 
-4. **[pdfcpu](https://github.com/pdfcpu/pdfcpu)** [![GitHub stars](https://img.shields.io/github/stars/pdfcpu/pdfcpu?style=social)](https://github.com/pdfcpu/pdfcpu/stargazers)  
+4. **[pdfcpu](https://github.com/pdfcpu/pdfcpu)** [![GitHub_Stars](https://img.shields.io/github/stars/pdfcpu/pdfcpu?style=social)](https://github.com/pdfcpu/pdfcpu/stargazers)  
    *A high-performance PDF processing library and command-line utility written in Go.* Supports PDF creation, encryption, watermark injection, page extraction, merging, splitting, and form filling with minimal memory footprint. **(License: Apache-2.0)**
 
-5. **[Quarto](https://github.com/quarto-dev/quarto-cli)** [![GitHub stars](https://img.shields.io/github/stars/quarto-dev/quarto-cli?style=social)](https://github.com/quarto-dev/quarto-cli/stargazers)  
+5. **[Quarto](https://github.com/quarto-dev/quarto-cli)** [![GitHub_Stars](https://img.shields.io/github/stars/quarto-dev/quarto-cli?style=social)](https://github.com/quarto-dev/quarto-cli/stargazers)  
    *Open-source scientific and technical publishing system built on Pandoc.* Combines text, executable Python/R/Julia code, and interactive visual outputs into publication-grade PDFs, Word docs, HTML dashboards, and presentations. **(License: GPL-2.0)**
 
-6. **[docxtemplater](https://github.com/open-xml-templating/docxtemplater)** [![GitHub stars](https://img.shields.io/github/stars/open-xml-templating/docxtemplater?style=social)](https://github.com/open-xml-templating/docxtemplater/stargazers)  
+6. **[docxtemplater](https://github.com/open-xml-templating/docxtemplater)** [![GitHub_Stars](https://img.shields.io/github/stars/open-xml-templating/docxtemplater?style=social)](https://github.com/open-xml-templating/docxtemplater/stargazers)  
    *The industry-standard JavaScript/Node.js library for generating DOCX, PPTX, and XLSX documents from Microsoft Office templates.* Allows template design using natural placeholding like `{name}` and loops `{#users}{name}{/users}` directly in Word or PowerPoint. **(License: MIT Core)**
 
-7. **[Carbone](https://github.com/carboneio/carbone)** [![GitHub stars](https://img.shields.io/github/stars/carboneio/carbone?style=social)](https://github.com/carboneio/carbone/stargazers)  
+7. **[Carbone](https://github.com/carboneio/carbone)** [![GitHub_Stars](https://img.shields.io/github/stars/carboneio/carbone?style=social)](https://github.com/carboneio/carbone/stargazers)  
    *Fast, multi-format report generator that converts JSON data into PDF, DOCX, XLSX, ODT, and PPTX via LibreOffice integration.* Features straightforward tags, conditional dynamic tables, and web-ready document rendering pipelines. **(License: Apache-2.0)**
 
-8. **[Docassemble](https://github.com/jhpyle/docassemble)** [![GitHub stars](https://img.shields.io/github/stars/jhpyle/docassemble?style=social)](https://github.com/jhpyle/docassemble/stargazers)  
+8. **[Docassemble](https://github.com/jhpyle/docassemble)** [![GitHub_Stars](https://img.shields.io/github/stars/jhpyle/docassemble?style=social)](https://github.com/jhpyle/docassemble/stargazers)  
    *Full-stack expert system for guided Q&A interviews and automated document assembly.* Built on Python, YAML, and Docker, Docassemble powers legal aid tools, court intake systems, and enterprise compliance workflows with logic-based document creation. **(License: MIT)**
 
-9. **[Docx-stamper](https://github.com/thombergs/docx-stamper)** [![GitHub stars](https://img.shields.io/github/stars/thombergs/docx-stamper?style=social)](https://github.com/thombergs/docx-stamper/stargazers)  
+9. **[Docx-stamper](https://github.com/thombergs/docx-stamper)** [![GitHub_Stars](https://img.shields.io/github/stars/thombergs/docx-stamper?style=social)](https://github.com/thombergs/docx-stamper/stargazers)  
    *Spring-friendly Java template engine for populating DOCX files.* Uses Spring Expression Language (SpEL) in Microsoft Word documents to conditionally replace text, insert images, and iterate table rows. **(License: MIT)**
 
-10. **[Wraft](https://github.com/wraft/wraft)** [![GitHub stars](https://img.shields.io/github/stars/wraft/wraft?style=social)](https://github.com/wraft/wraft/stargazers)  
+10. **[Wraft](https://github.com/wraft/wraft)** [![GitHub_Stars](https://img.shields.io/github/stars/wraft/wraft?style=social)](https://github.com/wraft/wraft/stargazers)  
     *An open-source Document Lifecycle Management platform built on open formats (Markdown and JSON).* Streamlines structured document authoring, approval workflows, and automated distribution for enterprise documentation. **(License: AGPL-3.0)**
 
-11. **[Yumdocs](https://github.com/yumdocs/yumdocs)** [![GitHub stars](https://img.shields.io/github/stars/yumdocs/yumdocs?style=social)](https://github.com/yumdocs/yumdocs/stargazers)  
+11. **[Yumdocs](https://github.com/yumdocs/yumdocs)** [![GitHub_Stars](https://img.shields.io/github/stars/yumdocs/yumdocs?style=social)](https://github.com/yumdocs/yumdocs/stargazers)  
     *Lightweight JavaScript template engine for Word, PowerPoint, and Excel files.* Merges document templates with JSON using expression tags (`{{field}}`) without external binary runtime requirements. **(License: MIT)**
 
-12. **[Document Templater](https://github.com/m4nd0mb3/document-templater)** [![GitHub stars](https://img.shields.io/github/stars/m4nd0mb3/document-templater?style=social)](https://github.com/m4nd0mb3/document-templater/stargazers)  
+12. **[Document Templater](https://github.com/m4nd0mb3/document-templater)** [![GitHub_Stars](https://img.shields.io/github/stars/m4nd0mb3/document-templater?style=social)](https://github.com/m4nd0mb3/document-templater/stargazers)  
     *Node.js and Express microservice for template-driven document generation built on Carbone.* Includes ready-to-deploy Docker containers and Swagger OpenAPI docs for API integrations. **(License: Apache-2.0)**
 
-13. **[AavanamKit](https://github.com/jafranjemal/aavanamkit)** [![GitHub stars](https://img.shields.io/github/stars/jafranjemal/aavanamkit?style=social)](https://github.com/jafranjemal/aavanamkit/stargazers)  
+13. **[AavanamKit](https://github.com/jafranjemal/aavanamkit)** [![GitHub_Stars](https://img.shields.io/github/stars/jafranjemal/aavanamkit?style=social)](https://github.com/jafranjemal/aavanamkit/stargazers)  
     *Open-source full-stack framework with React WYSIWYG designer and Node.js headless engine.* Merges JSON data with visual templates to output pixel-perfect vector PDFs and DOCX files. **(License: MIT)**
 
-14. **[Aldina](https://github.com/clbrge/aldina)** [![GitHub stars](https://img.shields.io/github/stars/clbrge/aldina?style=social)](https://github.com/clbrge/aldina/stargazers)  
+14. **[Aldina](https://github.com/clbrge/aldina)** [![GitHub_Stars](https://img.shields.io/github/stars/clbrge/aldina?style=social)](https://github.com/clbrge/aldina/stargazers)  
     *Open-source theme engine that transforms structured text content into print-grade brand documents and reports.* Utilizes ChoirMark format and headless Chromium page checks. **(License: AGPL-3.0)**
 
 ---
@@ -125,7 +125,7 @@ We welcome community contributions! To add a new document automation SaaS or ope
 
 1. **Fork this repository**.
 2. Edit `README.md` and insert your tool into the appropriate table or list following alphabetical/star/revenue sorting.
-3. Ensure open-source projects include a valid star badge linking to their stargazers page.
+3. Ensure open-source projects include a valid Stars_Badge linking to their stargazers page.
 4. Check out our meta awesome list: [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome).
 5. Open a **Pull Request** with a brief summary of the proposed addition.
 
