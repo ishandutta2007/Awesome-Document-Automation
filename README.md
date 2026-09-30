@@ -53,7 +53,7 @@ The table below summarizes top enterprise document generation platforms, ordered
 
 The open-source document automation ecosystem provides powerful template engines, headless PDF converters, and guided legal interview systems for self-hosting.
 
-Projects below are sorted by GitHub Stars_Count (descending):
+Projects below are sorted by GitHub_Stars_Count (descending):
 
 1. **[Typst](https://github.com/typst/typst)** [![GitHub_Stars](https://img.shields.io/github/stars/typst/typst?style=social)](https://github.com/typst/typst/stargazers)  
    *A modern, markup-based typesetting system that is as powerful as LaTeX while being simple to learn and lightning fast to compile.* Features instant preview, clean syntax, programmable layout functions, and high-fidelity PDF rendering. Ideal for dynamic document generation, scientific publishing, and automated report compilation. **(License: Apache-2.0)**
@@ -158,3 +158,12 @@ Thank you for exploring **Awesome Document Automation**! If this repository has 
 <p align="center">
   <b>Curated with ❤️ for Developers, Legal Technologists, and Automation Engineers</b>
 </p>
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Document-Automation&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Document-Automation_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Document-Automation_growth.svg">
+  </picture>
+</a>
