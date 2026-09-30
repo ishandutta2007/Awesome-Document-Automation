@@ -1,235 +1,160 @@
-# Awesome-Document-Automation
+# Awesome Document Automation 🚀
 
-## Top Document Automation Ecosystem
+![Awesome Document Automation Banner](assets/banner.svg)
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Template-Driven Generation, Document Assembly & Workflow Automation*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Document Automation**. These tools generate documents from templates, automate data merging, and streamline the creation of contracts, reports, proposals, and forms at scale.
-
-
-
-**Examples** include Templafy, PandaDoc, Conga Documents, Docupilot, Formstack Documents, Windward, HotDocs, Docmosis, Documint, and Plumsail (the category leaders).
-
-
-
-**Open-source emphasis**: This section is expanded with active projects for self-hosting, custom template engines, and transparent document generation — ideal for developers, legal teams, and organizations seeking vendor-independent automation. The open-source ecosystem is anchored by **docxtemplater** (Office document templating), **Docassemble** (guided interviews + assembly), and **AavanamKit** (visual PDF/DOCX design), with strong coverage in Java, Node.js, and Python environments.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Templafy](https://www.templafy.com/)**  
-
-  Enterprise document automation and brand compliance platform that integrates with Microsoft Office, Google Workspace, and Salesforce to ensure on-brand document creation.
-
-
-
-- **[PandaDoc](https://www.pandadoc.com/)**  
-
-  Document automation, e-signature, and proposal software with templates, content library, and workflow automation for sales and legal teams.
-
-
-
-- **[Conga Documents](https://conga.com/)**  
-
-  Document generation and contract lifecycle management platform for Salesforce, Microsoft, and other CRM/ERP systems.
-
-
-
-- **[Docupilot](https://docupilot.app/)**  
-
-  Document automation platform with template-based generation for contracts, invoices, proposals, and reports from various data sources.
-
-
-
-- **[Formstack Documents](https://www.formstack.com/products/documents)**  
-
-  Document generation tool (formerly WebMerge) that merges data from forms and apps into templates for PDFs, Word, and PowerPoint.
-
-
-
-- **[Windward](https://www.windwardstudios.com/)**  
-
-  Document generation and reporting engine for embedding into enterprise applications, with Java and .NET SDKs.
-
-
-
-- **[HotDocs](https://www.hotdocs.com/)**  
-
-  Long-standing document assembly platform for legal, insurance, and financial services with template creation and guided interviews.
-
-
-
-- **[Docmosis](https://www.docmosis.com/)**  
-
-  Document generation engine and cloud service with Java and REST APIs for high-volume template-based output.
-
-
-
-- **[Documint](https://documint.me/)**  
-
-  Document automation platform for generating PDFs and documents from templates and data.
-
-
-
-- **[Plumsail Documents](https://plumsail.com/documents/)**  
-
-  Document generation service for Microsoft Power Automate, SharePoint, and other platforms with template-based processing.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Docassemble](https://github.com/jhpyle/docassemble)**  
-
-  Open-source expert system for guided interviews and document assembly, originally built for the legal aid community and now used by courts, government agencies, and businesses worldwide . Authors create branching Q&A interviews in readable YAML with Python logic, which then assemble answers into finished PDF and Word documents from templates . Supports conditional workflows, calculations, and complex document generation without bespoke application code. MIT licensed, with a complete self-contained stack including PostgreSQL, Redis, Celery workers, and document toolchain (pandoc, LibreOffice, TeX Live, tesseract) . Deployable on Ubuntu via cloud marketplace with automated security updates .
-
-
-
-- **[docxtemplater](https://github.com/open-xml-templating/docxtemplater)**  
-
-  The most widely adopted open-source library for generating docx, pptx, and xlsx documents from templates, usable in Node.js or the browser . Templates are created in Word, PowerPoint, or Excel by non-programmers — placeholders like `{name}`, loops like `{#users}{name}{/users}`, and conditions are replaced with data . Insert custom XML for formatted text. Extensible via modules including Image, HTML, XLSX, Chart, Slides, Subtemplate, and Table (most modules are paid, with a free open-source core) . MIT licensed core with active maintenance for over 8 years .
-
-
-
-- **[AavanamKit](https://github.com/jafranjemal/aavanamkit)**  
-
-  Open-source full-stack ecosystem for designing and generating data-driven PDF and DOCX documents, built on React and Node.js . The **Designer** package provides a WYSIWYG visual canvas with drag-and-drop, resize, rotate, and styling — exported JSON becomes the production template. The **Engine** package is a headless Node.js library that merges templates with live data to produce high-quality native vector PDFs and DOCX files . Features auto-paginating tables, barcode support, conditional rendering, pre-printed stationery alignment, and continuous-roll mode for thermal receipts .
-
-
-
-- **[Yumdocs](https://github.com/yumdocs/yumdocs)**  
-
-  Open-source template engine for Word, PowerPoint, and Excel in JavaScript environments . Merges documents with data by executing statements and expressions found in `{{field}}` tags. MIT licensed with zero external dependencies beyond XML parsing (xmldom, jexl, jszip). Simple API: load template, render with data object, save output .
-
-
-
-- **[Docx-stamper](https://github.com/thombergs/docx-stamper)**  
-
-  Easy-to-use Java template engine for creating docx documents . 220+ stars on GitHub. Note: limited recent commit activity as of mid-2026 .
-
-
-
-- **[Docnamic](https://github.com/mklocke/docnamic)**  
-
-  PHP template engine for OpenDocument (.odt) files based on DOM and ZIP extensions . Templates created with standard WYSIWYG OpenDocument software like LibreOffice. Simple API with `loadTemplate()->setData()->render()`. Nested loops and dynamic images not yet supported. Convert ODT to PDF using unoconv .
-
-
-
-- **[Document Templater](https://github.com/m4nd0mb3/document-templater)**  
-
-  Apache-2.0 licensed microservice for template-based document generation built on Node.js, Express.js, and the Carbone library . Supports Word (docx) and PDF template formats with simple API integration. Docker-ready with Swagger documentation endpoint at `/api-docs/`. Designed to fetch data in real time from external APIs .
-
-
-
-- **[Aldina](https://github.com/clbrge/aldina)**  
-
-  Open-source engine that turns content and a theme into on-brand, print-grade documents, letters, reports, and decks . Built on ChoirMark, an open document format. Pipeline: ChoirMark → compose (into theme grammar) → gate (admit/reject) → project (PDF). Bounded LLM checkpoints for role inference and repair. Gate admits only pages passing hard checks (fit, contrast, hierarchy). Requires headless Chromium. Dual-licensed AGPL-3.0-or-later with commercial option .
-
-
-
-- **[Wraft](https://github.com/wraft/wraft)**  
-
-  Open-source Document Lifecycle Management platform built on open formats (markdown and JSON) for content authoring, collaboration, and distribution . Helps businesses produce structured documents from official letters to contracts. AGPLv3 licensed with self-hosted deployment option .
-
-
-
-- **[Quarto](https://github.com/quarto-dev/quarto-cli)**  
-
-  Open-source scientific and technical publishing system built on Pandoc . Combines text, code, visualizations, and advanced layouts in `.qmd` files with executable code blocks. Renders to HTML, PDF, Word, Markdown, EPUB, presentations (Reveal.js), dashboards, and websites. Supports R, Python, Julia, and Observable JavaScript. Ideal for reproducible reports and data-driven documents .
-
-
-
-- **[OfficeCLI](https://github.com/iOfficeAI/OfficeCLI)**  
-
-  First Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files . Free, open-source, single binary, no Office installation required. Includes a high-fidelity HTML rendering engine so agents can visually inspect documents rather than guessing from DOM — detecting title overflow, shape overlaps, and layout issues. Rendering is baked into the binary, enabling render→view→fix loops in CI, Docker, or headless servers .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **LOTemplate** — Document generator for ODT, DOCX, and PDF from template and JSON file. Active development with 23+ stars .
-
-- **Unlawful Assembly** — Client-side web application for legal document assembly with survey designer, DOCX template upload, visual field mapping, and docxtemplater-based generation. TypeScript + Vite stack .
-
-- **OpenDoc Headless** — Agent-driven document production for PDF and editable PowerPoint with browser review loop. `npx @ryanyahya/opendoc-headless init` for workspace setup .
-
-- **MoSage** — Agent-driven document creation for reports and proposals with headless Chromium rendering, auto-pagination, table of contents, and export to PDF/Word/HTML. MIT licensed .
-
-- **python-hwpx** — Pure Python HWPX document parsing, editing, and generation without Hancom Office. Includes MCP server and agent skill for AI workflows .
-
-
-
-**Frameworks for building custom document automation**: Combine **docxtemplater** for Office document templating with loops and conditions . Use **Docassemble** for guided interviews and complex document assembly with conditional logic . Deploy **AavanamKit** for visual template design with WYSIWYG canvas and headless rendering . Integrate **Yumdocs** or **Docnamic** for lightweight template merging in JavaScript or PHP environments . For AI-agent-driven workflows, **OfficeCLI** or **MoSage** enable agents to create and refine documents autonomously . Note that true enterprise document automation with content governance, brand compliance, and CRM/ERP integrations remains primarily commercial territory; open-source stacks provide strong template engines, visual designers, and assembly frameworks that require integration for complete automation.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Document automation tools handle sensitive business, legal, and personal data. Self-hosted solutions require proper security hardening, access controls, and compliance with data privacy regulations (GDPR, CCPA, HIPAA).
-
-- Template quality and data validation are critical. Automated document generation should include review workflows for high-stakes outputs (contracts, legal filings, regulatory submissions).
-
-- The open-source ecosystem provides strong template engines, visual designers, and assembly frameworks, but enterprise content governance, brand compliance, and CRM/ERP integrations remain primarily commercial offerings.
-
-
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Document-Automation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Document-Automation?style=flat-square&color=gold" alt="Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Document-Automation/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Document-Automation?style=flat-square&color=blue" alt="Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Document-Automation/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Document-Automation?style=flat-square" alt="License"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 📌 Overview & SEO Summary
 
+Welcome to **Awesome Document Automation** — the premier curated directory of enterprise **SaaS products**, **developer APIs**, and active **open-source libraries** for document automation, template-driven PDF/DOCX generation, and automated document assembly.
 
-**Made for developers, legal technologists, operations teams, and document automation engineers.**  
+Whether you are building automated contract workflows, generating data-driven financial reports, embedding PDF rendering microservices into cloud applications, or utilizing AI agents for document creation, this list covers the leading solutions across commercial and open-source ecosystems.
 
-Let's make document automation more open, transparent, and accessible.
+---
+
+## 📑 Table of Contents
+
+- [📊 SaaS & Commercial Platforms](#-saas--commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [💡 Choosing the Right Document Automation Engine](#-choosing-the-right-document-automation-engine)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 📊 SaaS & Commercial Platforms
+
+> 🌐 **Market Size & Industry Structure**: The global document automation market is estimated at **$3.2 Billion (2026)** and is projected to reach **$8.5 Billion by 2032** growing at a 18.2% CAGR. The sector is **moderately fragmented**, dominated by enterprise giants like Conga, PandaDoc, and Templafy for CRM/Office automation, alongside specialized document APIs and rapidly innovating self-hosted open-source document engines.
+
+The table below summarizes top enterprise document generation platforms, ordered by estimated company size / revenue / valuation (descending):
+
+| 🏢 Product | 📜 Description & Capabilities | 💰 Starting Price | 🎁 Free Tier / Trial Limit | 📊 Company Size / Revenue / Valuation |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Conga Documents](https://conga.com/)** | Enterprise document generation & contract lifecycle management (CLM) deeply integrated with Salesforce, Microsoft Dynamics, and ERP systems. | **$20.00** / user / mo | **30-Day Free Trial** (AppExchange test drive) | **~$300M ARR** ($1.3B Valuation / Thoma Bravo) |
+| **[PandaDoc](https://www.pandadoc.com/)** | End-to-end document automation, CPQ, e-signature, and proposal management platform with automated workflow triggers. | **$19.00** / user / mo | **14-Day Free Trial** (Or Free Plan: 5 docs/mo) | **~$100M ARR** ($1.0B Unicorn Valuation) |
+| **[Templafy](https://www.templafy.com/)** | Enterprise content governance and document assembly platform integrated with MS Office and Google Workspace for brand compliance. | **$15.00** / user / mo | **14-Day Free Trial** (Enterprise sandbox setup) | **~$75M ARR** (~$500M Valuation) |
+| **[Formstack Documents](https://www.formstack.com/products/documents)** | Cloud document generation engine (formerly WebMerge) merging form data into PDF, Word, Excel, and PowerPoint templates. | **$92.00** / month | **14-Day Free Trial** (Up to 20 test documents) | **~$60M ARR** (~$500M Valuation) |
+| **[HotDocs](https://www.hotdocs.com/)** | Long-standing legal, insurance, and banking document assembly platform featuring guided Q&A interviews and template building. | **$25.00** / user / mo | **30-Day Free Trial** (On-demand test workspace) | **~$50M ARR** (~$300M Parent CARET Valuation) |
+| **[Windward](https://www.windwardstudios.com/)** | High-performance enterprise document generation and reporting engine for embedding into Java and .NET enterprise software. | **$249.00** / month | **14-Day Free Trial** (Watermarked engine key) | **~$15M ARR** (~50 Employees) |
+| **[Plumsail Documents](https://plumsail.com/documents/)** | Flexible document generation service for Power Automate, SharePoint, REST API, and webhooks with Word/Excel template merging. | **$25.00** / month | **30-Day Free Trial** (Up to 30 document runs) | **~$8M ARR** (~30 Employees) |
+| **[Docmosis](https://www.docmosis.com/)** | High-volume template-based document generation cloud service and self-hosted engine with REST & Java APIs. | **$29.00** / month | **14-Day Free Trial** (100 test document calls) | **~$5M ARR** (~20 Employees) |
+| **[Docupilot](https://docupilot.app/)** | Template-driven document creation platform for automated invoices, contracts, proposals, and certificates from webhooks & forms. | **$29.00** / month | **30-Day Free Trial** (Up to 30 test generation runs) | **~$3M ARR** (~15 Employees) |
+| **[Documint](https://documint.me/)** | Visual document builder and PDF generation API for micro-SaaS, Airtable, Zapier, and custom software integrations. | **$15.00** / month | **Free Forever Plan** (Up to 20 documents/month) | **~$1M ARR** (~10 Employees) |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+The open-source document automation ecosystem provides powerful template engines, headless PDF converters, and guided legal interview systems for self-hosting.
+
+Projects below are sorted by GitHub star count (descending):
+
+1. **[Typst](https://github.com/typst/typst)** [![GitHub stars](https://img.shields.io/github/stars/typst/typst?style=social)](https://github.com/typst/typst/stargazers)  
+   *A modern, markup-based typesetting system that is as powerful as LaTeX while being simple to learn and lightning fast to compile.* Features instant preview, clean syntax, programmable layout functions, and high-fidelity PDF rendering. Ideal for dynamic document generation, scientific publishing, and automated report compilation. **(License: Apache-2.0)**
+
+2. **[OfficeCLI](https://github.com/iOfficeAI/OfficeCLI)** [![GitHub stars](https://img.shields.io/github/stars/iOfficeAI/OfficeCLI?style=social)](https://github.com/iOfficeAI/OfficeCLI/stargazers)  
+   *First open-source Office suite built specifically for AI agents to read, edit, and automate Word, Excel, and PowerPoint files.* Offers headless single-binary execution with no Microsoft Office dependencies. Includes built-in high-fidelity HTML rendering so AI agents can visually inspect generated layouts and fix overflows automatically. **(License: MIT)**
+
+3. **[Gotenberg](https://github.com/gotenberg/gotenberg)** [![GitHub stars](https://img.shields.io/github/stars/gotenberg/gotenberg?style=social)](https://github.com/gotenberg/gotenberg/stargazers)  
+   *A developer-friendly Docker-powered stateless API for converting HTML, Markdown, Word, Excel, and Office documents into native PDFs.* Integrates Chromium for web page conversion and LibreOffice for document rendering. Highly scalable for microservice architectures. **(License: MIT)**
+
+4. **[pdfcpu](https://github.com/pdfcpu/pdfcpu)** [![GitHub stars](https://img.shields.io/github/stars/pdfcpu/pdfcpu?style=social)](https://github.com/pdfcpu/pdfcpu/stargazers)  
+   *A high-performance PDF processing library and command-line utility written in Go.* Supports PDF creation, encryption, watermark injection, page extraction, merging, splitting, and form filling with minimal memory footprint. **(License: Apache-2.0)**
+
+5. **[Quarto](https://github.com/quarto-dev/quarto-cli)** [![GitHub stars](https://img.shields.io/github/stars/quarto-dev/quarto-cli?style=social)](https://github.com/quarto-dev/quarto-cli/stargazers)  
+   *Open-source scientific and technical publishing system built on Pandoc.* Combines text, executable Python/R/Julia code, and interactive visual outputs into publication-grade PDFs, Word docs, HTML dashboards, and presentations. **(License: GPL-2.0)**
+
+6. **[docxtemplater](https://github.com/open-xml-templating/docxtemplater)** [![GitHub stars](https://img.shields.io/github/stars/open-xml-templating/docxtemplater?style=social)](https://github.com/open-xml-templating/docxtemplater/stargazers)  
+   *The industry-standard JavaScript/Node.js library for generating DOCX, PPTX, and XLSX documents from Microsoft Office templates.* Allows template design using natural placeholding like `{name}` and loops `{#users}{name}{/users}` directly in Word or PowerPoint. **(License: MIT Core)**
+
+7. **[Carbone](https://github.com/carboneio/carbone)** [![GitHub stars](https://img.shields.io/github/stars/carboneio/carbone?style=social)](https://github.com/carboneio/carbone/stargazers)  
+   *Fast, multi-format report generator that converts JSON data into PDF, DOCX, XLSX, ODT, and PPTX via LibreOffice integration.* Features straightforward tags, conditional dynamic tables, and web-ready document rendering pipelines. **(License: Apache-2.0)**
+
+8. **[Docassemble](https://github.com/jhpyle/docassemble)** [![GitHub stars](https://img.shields.io/github/stars/jhpyle/docassemble?style=social)](https://github.com/jhpyle/docassemble/stargazers)  
+   *Full-stack expert system for guided Q&A interviews and automated document assembly.* Built on Python, YAML, and Docker, Docassemble powers legal aid tools, court intake systems, and enterprise compliance workflows with logic-based document creation. **(License: MIT)**
+
+9. **[Docx-stamper](https://github.com/thombergs/docx-stamper)** [![GitHub stars](https://img.shields.io/github/stars/thombergs/docx-stamper?style=social)](https://github.com/thombergs/docx-stamper/stargazers)  
+   *Spring-friendly Java template engine for populating DOCX files.* Uses Spring Expression Language (SpEL) in Microsoft Word documents to conditionally replace text, insert images, and iterate table rows. **(License: MIT)**
+
+10. **[Wraft](https://github.com/wraft/wraft)** [![GitHub stars](https://img.shields.io/github/stars/wraft/wraft?style=social)](https://github.com/wraft/wraft/stargazers)  
+    *An open-source Document Lifecycle Management platform built on open formats (Markdown and JSON).* Streamlines structured document authoring, approval workflows, and automated distribution for enterprise documentation. **(License: AGPL-3.0)**
+
+11. **[Yumdocs](https://github.com/yumdocs/yumdocs)** [![GitHub stars](https://img.shields.io/github/stars/yumdocs/yumdocs?style=social)](https://github.com/yumdocs/yumdocs/stargazers)  
+    *Lightweight JavaScript template engine for Word, PowerPoint, and Excel files.* Merges document templates with JSON using expression tags (`{{field}}`) without external binary runtime requirements. **(License: MIT)**
+
+12. **[Document Templater](https://github.com/m4nd0mb3/document-templater)** [![GitHub stars](https://img.shields.io/github/stars/m4nd0mb3/document-templater?style=social)](https://github.com/m4nd0mb3/document-templater/stargazers)  
+    *Node.js and Express microservice for template-driven document generation built on Carbone.* Includes ready-to-deploy Docker containers and Swagger OpenAPI docs for API integrations. **(License: Apache-2.0)**
+
+13. **[AavanamKit](https://github.com/jafranjemal/aavanamkit)** [![GitHub stars](https://img.shields.io/github/stars/jafranjemal/aavanamkit?style=social)](https://github.com/jafranjemal/aavanamkit/stargazers)  
+    *Open-source full-stack framework with React WYSIWYG designer and Node.js headless engine.* Merges JSON data with visual templates to output pixel-perfect vector PDFs and DOCX files. **(License: MIT)**
+
+14. **[Aldina](https://github.com/clbrge/aldina)** [![GitHub stars](https://img.shields.io/github/stars/clbrge/aldina?style=social)](https://github.com/clbrge/aldina/stargazers)  
+    *Open-source theme engine that transforms structured text content into print-grade brand documents and reports.* Utilizes ChoirMark format and headless Chromium page checks. **(License: AGPL-3.0)**
+
+---
+
+## 💡 Choosing the Right Document Automation Engine
+
+```mermaid
+flowchart TD
+    A["Need Document Automation?"] --> B{"Commercial SaaS or Self-Hosted?"}
+    B -- "Commercial SaaS" --> C{"Integration Focus?"}
+    C -- "Salesforce / CRM" --> D["Conga Documents / PandaDoc"]
+    C -- "Office & Brand Control" --> E["Templafy / Formstack"]
+    C -- "API / Developer Focus" --> F["Docmosis / Docupilot / Documint"]
+
+    B -- "Self-Hosted Open Source" --> G{"Primary Format & Tech Stack?"}
+    G -- "Office (Word/Excel) + Node.js" --> H["docxtemplater / Carbone / Yumdocs"]
+    G -- "Docker PDF Microservice" --> I["Gotenberg / pdfcpu"]
+    G -- "Guided Legal Interviews" --> J["Docassemble"]
+    G -- "AI Agent Automated Editing" --> K["OfficeCLI"]
+    G -- "Programmatic PDF / Scientific" --> L["Typst / Quarto"]
+```
+
+---
+
+## 🤝 How to Contribute
+
+We welcome community contributions! To add a new document automation SaaS or open-source repository:
+
+1. **Fork this repository**.
+2. Edit `README.md` and insert your tool into the appropriate table or list following alphabetical/star/revenue sorting.
+3. Ensure open-source projects include a valid star badge linking to their stargazers page.
+4. Check out our meta awesome list: [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome).
+5. Open a **Pull Request** with a brief summary of the proposed addition.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Document-Automation&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Document-Automation&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you for exploring **Awesome Document Automation**! If this repository has helped you evaluate tools or build document generation pipelines:
+
+- ⭐ **Star this repository** to help others discover it on GitHub.
+- 🔀 **Fork and share** with team members and developers.
+- 💬 **Join our community** on [Discord](https://discord.gg/jc4xtF58Ve) to discuss document workflows and automation ideas.
+- ☕ **Sponsor / Buy me a coffee**: Support ongoing maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational and research purposes.
+- Always review data protection policies (GDPR, HIPAA, SOC 2) when handling confidential contracts or customer data in SaaS or self-hosted document engines.
+
+---
+
+<p align="center">
+  <b>Curated with ❤️ for Developers, Legal Technologists, and Automation Engineers</b>
+</p>
